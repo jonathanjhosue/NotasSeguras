@@ -1,0 +1,28 @@
+Notas Seguras Plasmoid
+----------------------
+Autor: Jonathan Jhosue Sánchez Ugalde
+Email: jonathanjhosue@gmail.com
+País:  Costa Rica
+
+Notas Seguras permite crear pequeñas notas como el plasmoid "notes" pero con el agregado de poder 
+establecer una contraseña para poder visualizarse además de que su contenido se almacena encriptado.
+Útil para apuntar contraseñas de sitios y poder recordarlas fácilmente, escribir algún mensaje que 
+deseamos mantener en secreto, etc...
+
+(English)
+Notas Seguras allows you to create small notes plasmoid as the "notes" but with the added possibility 
+set a password to be displayedalso the content is stored encrypted.
+Useful to target sites and passwords they can remember easily, write a message that we want to keep secret, etc ...
+
+You need KDE 4.x
+
+-- Build instructions --
+
+In plasmoid directory:
+  cmake -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix`
+  make
+As root with "su" or "sudo" execute:
+  make install
+kbuildsycoca4
+
+You may need to clean the cache for the icons to display correctly.
